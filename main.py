@@ -4,10 +4,16 @@ from gtts import gTTS
 import random
 import playsound
 import os
+import speech_recognition as sr
 
 
 def listen_command():
-    return input(get_message)
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
+        print("Say something!")
+        audio = r.listen(source)
+        text = r.recognize_google(audio)
+    return text
 
 
 def say_message(message):

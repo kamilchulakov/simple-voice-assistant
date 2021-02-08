@@ -9,5 +9,6 @@ Project is created with:
 * Python
 * gTTS
 * playsound
+* speech recognition
 ## License
 This project is made only for my personal usage.
