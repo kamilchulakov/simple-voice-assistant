@@ -8,5 +8,6 @@ This project is my simple voice assistant.
 Project is created with:
 * Python
 * gTTS
+* playsound
 ## License
 This project is made only for my personal usage.
