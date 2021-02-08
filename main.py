@@ -15,7 +15,7 @@ def say_message(message):
     filename = "_audio_" + str(time.time()) + str(random.randint(0, 100000)) + ".mp3"
     voice.save(filename)
     playsound.playsound(filename)
-    print(message)
+    print("gTTs: " + message)
     os.remove(filename)
 
 

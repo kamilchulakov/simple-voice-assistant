@@ -2,4 +2,4 @@ greetings = {"hello", "hi", "good day", "good evening", "good night", "good afte
 partings = {"bye", "see you"}
 stoppers = {"stop", "finish"}
 stop_messages = partings.union(stoppers)
-get_message = "Type your command:\n"
+get_message = "Type your command: "
