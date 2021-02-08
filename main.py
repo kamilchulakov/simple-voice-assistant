@@ -3,6 +3,7 @@ from statics import *
 from gtts import gTTS
 import random
 import playsound
+import os
 
 
 def listen_command():
@@ -15,6 +16,7 @@ def say_message(message):
     voice.save(filename)
     playsound.playsound(filename)
     print(message)
+    os.remove(filename)
 
 
 def check_any_set_value_message(set1, message):
