@@ -2,6 +2,7 @@ import time
 from statics import *
 from gtts import gTTS
 import random
+import playsound
 
 
 def listen_command():
@@ -12,6 +13,7 @@ def say_message(message):
     voice = gTTS(message, lang="en")
     filename = "_audio_" + str(time.time()) + str(random.randint(0, 100000)) + ".mp3"
     voice.save(filename)
+    playsound.playsound(filename)
     print(message)
 
 
